@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>My Photos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ 
+
+  <style>
+   img.fullscreen {
+    max-height: 100%;
+    max-width: 100%;
+   }
+  </style>
+ </head>
+
+ <body>
+ <?php echo "<b>Hello World!</b>"; ?>
+  <div data-role="page" id="home">
+   <header data-role="header">
+    <h1>BIER IS PLEZIER</h1>
+   </header>
+
+   <article data-role="content">
+    <ul data-role="listview" >
+     <li>
+      <a href="#clasic"> <h1>Clasic</h1>
+      <p>
+       Click here to play the clasic game
+      </p> </a>
+     </li>
+     <li>
+      <a href="#custom"> <h1>Custom</h1>
+      <p>
+       Click here to make your own custom game. Add your own rules and tasks.
+      </p> </a>
+     </li>
+     <li>
+      <a href="#info"> <h1>info</h1>
+      <p>
+       If you are not sure how this app works click here
+      </p> </a>
+     </li>
+    </ul>
+   </article>
+
+   <footer data-role="footer" data-position="fixed">
+    
+   </footer>
+  </div><!-- Page photos -->
+  
+  <div data-role="page" id="clasic">
+   <header data-role="header">
+    <h1>The Clasic game</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext">home</a>
+   </header>
+    <a href="#drinkBuddy" data-role="button"> <h1>Juffen</h1>
+      <p>
+       De bedoeling is dat je gaat optellen. Bij elk <br>getal dat niet in de tavel van 7 zit of waar<br> het getal 7 in voor komt moet je juf <br>zeggen ipv dat getal. Daarna tel je verder. <br>Wanneer iemand een fout maakt moet <br>hij drinken.
+      </p> </a> 
+
+  </div>
+
+  <div data-role="page" id="drinkBuddy">
+   <header data-role="header">
+    <h1>The Clasic game</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext">home</a>
+   </header>
+   <a href="#onderwerp" data-role="button"> <h1>Drinkbuddy's</h1>
+      <p>
+       Jij mag een drinkbuddy kiezen. Wanneer <br>jij moet drinken moet jouw drinkbuddy ook <br>drinken en andersom.
+      </p> </a> 
+
+  </div>
+
+    </div>
+
+  <div data-role="page" id="onderwerp">
+   <header data-role="header">
+    <h1>The Clasic game</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext">home</a>
+   </header>
+   <a href="#drinkBuddy" data-role="button"> <h1>Onderwerp's</h1>
+      <p>
+       Bedenk een onderwerp. Dit onderwerp kan <br> bijv automerken zijn. Iedereen moet een <br>automerk noemen. De gene die niet binnen <br>2 sec een automerk kan noemen moet<br> drinken. Jij begint en het spel is pas af <br>wanneer iemand niet optijd heeft <br>geantwoord. 
+      </p> </a> 
+
+  </div>
+
+  <div data-role="page" id="custom">
+   <header data-role="header">
+    <h1>Cutom</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext">home</a>
+   </header>
+   <form> Naam van de regel
+   <input type="text" name="firstname">
+   uitleg van de regel:
+   </form>
+   <textarea rows="4" cols="50" resize: none; id="one">
+   </textarea>
+   <button>
+     Voeg regel toe
+   </button>
+   <button>
+     Begin spel
+   </button>
+   <section id="displayBox">
+     staat nog niks
+   </section>
+
+  </div><!-- Page DJ competition -->
+
+  <div data-role="page" id="info">
+   <header data-role="header">
+    <h1>info</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext">home</a>
+   </header>
+  </div><!-- Page Smartphones -->
+
+ </body>
+</html>
