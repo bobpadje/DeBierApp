@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="app.js"></script>
  
 
   <style>
@@ -18,7 +19,7 @@
  </head>
 
  <body>
- <?php echo "<b>Hello World!</b>"; ?>
+
   <div data-role="page" id="home">
    <header data-role="header">
     <h1>BIER IS PLEZIER</h1>
@@ -29,7 +30,7 @@
      <li>
       <a href="#clasic"> <h1>Clasic</h1>
       <p>
-       Click here to play the clasic game
+       Click here to play the clasic game 
       </p> </a>
      </li>
      <li>
@@ -95,21 +96,8 @@
     <h1>Cutom</h1>
     <a href="#home" data-icon="home" data-iconpos="notext">home</a>
    </header>
-   <form> Naam van de regel
-   <input type="text" name="firstname">
-   uitleg van de regel:
-   </form>
-   <textarea rows="4" cols="50" resize: none; id="one">
-   </textarea>
-   <button>
-     Voeg regel toe
-   </button>
-   <button>
-     Begin spel
-   </button>
-   <section id="displayBox">
-     staat nog niks
-   </section>
+  <input type="text" name="item" placeholder="Add an item.." onchange="add();">
+ <ul id="items" data‐role="listview" data‐inset="true"></ul>
 
   </div><!-- Page DJ competition -->
 
